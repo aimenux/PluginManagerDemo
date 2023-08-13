@@ -1,3 +1,5 @@
+[![.NET](https://github.com/aimenux/PluginManagerDemo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/aimenux/PluginManagerDemo/actions/workflows/ci.yml)
+
 # PluginManagerDemo
 ```  
 Providing a basic manager for loading and running plugins
