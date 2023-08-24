@@ -2,10 +2,10 @@
 
 # PluginManagerDemo
 ```  
-Providing a basic manager for loading and running plugins
+Providing a basic implementation for loading and running plugins
 ```  
 
-> In this demo, i m providing a basic manager for loading and running plugins.
+> In this demo, i m providing a basic implementation for loading and running plugins.
 >
 > :one: `Example01` use [default ioc](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection) and some reflection in order to load plugins
 >
