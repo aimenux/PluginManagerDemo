@@ -9,7 +9,7 @@
       <ProjectReference Include="..\Example01.Core\Example01.Core.csproj" />
     </ItemGroup>
 
-    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(Configuration)' == 'Release'">
         <Exec Command="copy /Y $(TargetDir)$(TargetName).dll $(SolutionDir)plugins" />
     </Target>    
 
