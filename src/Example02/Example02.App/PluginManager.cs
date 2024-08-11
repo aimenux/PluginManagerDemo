@@ -16,13 +16,13 @@ public class PluginManager : IPluginManager
 
     public PluginManager(IEnumerable<IPlugin> plugins, ILogger<PluginManager> logger)
     {
-        _plugins = Array.AsReadOnly(plugins?.ToArray() ?? Array.Empty<IPlugin>());
+        _plugins = Array.AsReadOnly(plugins?.ToArray() ?? []);
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
 
     public void ListPlugins()
     {
-        _logger.LogInformation("Found {count} plugins.", _plugins.Count);
+        _logger.LogInformation("Found '{count}' plugin(s).", _plugins.Count);
 
         foreach (var plugin in _plugins)
         {
